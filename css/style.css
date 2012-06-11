@@ -225,6 +225,9 @@ footer .alignright p {
 	}
 }
 
+/* If you're going to print it, you should probably use the PSD: http://styletil.es/downloads/Style_Tile_Template.psd.zip
+...but sometimes we have preemptive printers for bosses. :) So, let's make it one page, hide the footer, and ask Webkit to print background images. */
+
 @media print {
 	* {
 		-webkit-print-color-adjust: exact;
