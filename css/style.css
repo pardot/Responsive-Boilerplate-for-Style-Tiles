@@ -1,0 +1,251 @@
+/* All over it. (Global) */
+html,button,input,select,textarea {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	width: 100%;
+	margin: 0 0 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+/* Up top! (Header) */
+header {
+	color: #000;
+}
+
+header h1 {
+	background: #FFF;
+	box-shadow: 0 1px 10px 1px #222;
+	float: left;
+	font-size: 36px;
+	width: auto;
+	margin: 0 20px 0 30px;
+	padding: 50px;
+}
+
+header h2 {
+	background: #000;
+	color: #FFF;
+	margin: 0;
+	padding: 10px;
+}
+
+header h4,header p {
+	margin: 5px 0 0;
+}
+
+/* Your Body is a Wonderland (Body) */
+#wrapper {
+	clear: both;
+	margin: 20px 0;
+	padding: 0 40px;
+}
+
+#elements,#words {
+	width: 47%;
+}
+
+/* The colors, Duke, the colors! (#Colors) */
+#colors {
+	clear: both;
+}
+
+.square,.bigsquare {
+	box-shadow: 1px 1px 10px 1px #222;
+	float: left;
+	height: 60px;
+	width: 60px;
+	margin: 0 15px 10px 0;
+	padding: 5px;
+}
+
+#square-one,#square-two,#square-three,#square-four,#square-five {
+	height: 100%;
+	width: 100%;
+}
+
+#square-one {
+	background: #36834a;
+}
+
+#square-two {
+	background: #bd2433;
+}
+
+#square-three {
+	background: #2740a1;
+}
+
+#square-four {
+	background: #bc8919;
+}
+
+#square-five {
+	background: #b66cba;
+}
+
+/* Stroke the Furry Wall (#Textures) */
+#textures {
+	clear: both;
+	padding-top: 20px;
+}
+
+.bigsquare {
+	height: 120px;
+	width: 120px;
+}
+
+#texture-one,#texture-two,#texture-three {
+	height: 100%;
+	width: 100%;
+}
+
+#texture-one {
+	background-image: url(http://farm4.staticflickr.com/3444/3738069743_c3a22dee34_q.jpg);
+}
+
+#texture-two {
+	background-image: url(http://farm4.staticflickr.com/3444/3738069743_c3a22dee34_q.jpg);
+}
+
+#texture-three {
+	background-image: url(http://farm4.staticflickr.com/3444/3738069743_c3a22dee34_q.jpg);
+}
+
+/* The Easy Button(s) (#Buttons) */
+#buttons {
+	clear: both;
+	padding-top: 20px;
+}
+
+#buttons a {
+	background-color: #000;
+	color: #FFF;
+	float: left;
+	font-size: 12px;
+	text-decoration: none;
+	margin: 0 10px 10px 0;
+	padding: 20px;
+}
+
+#buttons a:hover {
+	background-color:gray;
+}
+
+/* Gosling-Approved Typography (#Typography) */
+#typography h1 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 34px;
+	margin: 0;
+}
+
+#typography h3 {
+	font-size: 24px;
+	line-height: 26px;
+	margin: 20px 0 0;
+}
+
+#typography p {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.font {
+	color: gray;
+	font-size: 12px;
+	margin: 0;
+}
+
+/* Redundant adjectives are redundant. (#Adjectives) */
+#adjectives span {
+	font-size: 36px;
+	margin-right: 30px;
+}
+
+/* Down low! (Footer) */
+footer {
+	clear: both;
+	color: gray;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 40px;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer .alignleft p {
+	font-style: italic;
+}
+
+footer .alignright p {
+	font-weight: 700;
+}
+
+/* Make it look good on your new-fangled Palm Pilot! (Media Queries) */
+ 
+@media (max-width: 600px) {
+	#elements, #words {
+		width: 100%;
+	}
+	
+	#colors, #textures, #buttons {
+		padding-top: 10px;
+	}
+	
+	#typography {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	header h1, header h2, header h4, header p {
+		text-align: center;
+	}
+	
+	#logo h1 {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media print {
+	* {
+		-webkit-print-color-adjust: exact;
+		overflow: hidden;
+		box-shadow: none !important;
+	}
+	
+	#logo {
+		overflow: visible;
+	}	
+	
+	.square,.bigsquare {
+		height: 40px;
+		width: 40px;
+	}
+	
+	#colors, #textures, #buttons {
+		padding-top: 5px;
+	}
+	
+	footer {
+		display: none;
+	}
+}
