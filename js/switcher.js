@@ -25,7 +25,6 @@
 					}
 				}
 			);
-			createCookie('style', styleName, 365);
 		};
 		
 		// That's what's up. 
